@@ -1,0 +1,14 @@
+{
+  "schema": 0,
+  "title": "Will's Mod Menu",
+  "description": "Settings for this menu.",
+  "applies": "live",
+  "allowToggle": false,
+  "settings": {
+    "Debug": {
+      "type": "toggle",
+      "description": "Adds a DEBUG tab to every mod that offers debug actions (mod makers use these to test their mods). Off for normal play.",
+      "default": "false"
+    }
+  }
+}

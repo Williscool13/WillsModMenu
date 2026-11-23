@@ -1,0 +1,15 @@
+{
+  "schema": 0,
+  "title": "Hello HUD",
+  "description": "An example mod: one line of text on the HUD.",
+  "applies": "live",
+  "preview": {"x": "PanelX", "y": "PanelY", "align": [0.5, 0.5], "size": [180, 32], "label": "Hello HUD"},
+  "settings": {
+    "Text": {"type": "text", "default": "Hello, HUD!", "label": "Text", "description": "What the label says.", "group": "Label"},
+    "Size": {"type": "number", "min": 10, "max": 60, "step": 1, "unit": "pt", "default": "24", "label": "Size", "description": "Font size.", "group": "Label"},
+    "Color": {"type": "color", "label": "Color", "default": "FFFFFF", "description": "Text color.", "group": "Label"},
+    "ToggleKey": {"type": "key", "label": "Show / Hide Key", "default": "F6", "description": "Shows or hides the label.", "group": "Keys"},
+    "PanelX": {"type": "number", "min": 0, "max": 1, "step": 0.01, "label": "Position X", "default": "0.5", "description": "The label's centre, as a fraction of the screen width."},
+    "PanelY": {"type": "number", "min": 0, "max": 1, "step": 0.01, "label": "Position Y", "default": "0.15", "description": "The label's centre, as a fraction of the screen height."}
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 0,
+  "title": "SentryHeat",
+  "description": "Heat, damage bonus and kills for your sentries.",
+  "applies": "live",
+  "preview": {"x": "PanelX", "y": "PanelY", "align": [1, 0.5], "size": [200, 47], "label": "Sentry Panel", "description": "Drag the highlighted box to move the sentry panel (used when Style is the HUD table; shown with one sentry, each extra sentry adds a row). The other mods' HUD elements are shown faded."},
+  "settings": {
+    "Style": {"type": "choice", "options": ["world", "panel"], "labels": {"world": "World", "panel": "Panel"}, "default": "world", "label": "Style", "description": "World: data over each sentry.\nPanel: number tags and a HUD table.", "group": "Display"},
+    "ShowMine": {"type": "multi", "options": ["heat", "dmg", "kills"], "none": "off", "default": "heat, dmg, kills", "label": "Your Sentries", "description": "What your sentries show.", "group": "Display", "labels": {"heat": "Heat", "dmg": "Damage", "kills": "Kills"}},
+    "ShowTeammates": {"type": "multi", "options": ["heat", "dmg", "kills"], "none": "off", "default": "heat", "label": "Teammates' Sentries", "description": "What teammates' sentries show (faded).", "group": "Display", "labels": {"heat": "Heat", "dmg": "Damage", "kills": "Kills"}},
+    "YellowAt": {"type": "number", "min": 0, "max": 100, "step": 5, "unit": "%", "default": "60", "label": "Yellow From", "description": "Heat % where the number turns yellow. The game's smoke starts at 80%.", "group": "Heat"},
+    "RedAt": {"type": "number", "min": 0, "max": 100, "step": 5, "unit": "%", "default": "80", "label": "Red From", "description": "Heat % where the number turns red.", "group": "Heat"},
+    "ToggleKey": {"type": "key", "default": "NONE", "label": "On/Off Key", "description": "Shows or hides the markers.", "group": "Keys"},
+    "StyleKey": {"type": "key", "default": "NONE", "label": "Style Key", "description": "Switches the style until the next restart.", "group": "Keys"},
+    "PanelX": {"type": "number", "min": 0, "max": 1, "step": 0.005, "default": "0.985", "label": "Panel Position X", "description": "Panel style: the table's right edge, as a fraction of the screen width.", "group": "Panel"},
+    "PanelY": {"type": "number", "min": 0, "max": 1, "step": 0.01, "default": "0.58", "label": "Panel Position Y", "description": "Panel style: the table's vertical centre, as a fraction of the screen height.", "group": "Panel"},
+    "NearDistance": {"type": "number", "min": 1, "max": 100, "step": 1, "unit": "m", "default": "15", "label": "Detail Distance", "description": "Closer than this (metres), a sentry shows its full panel.", "group": "Markers"},
+    "MarkerHeight": {"type": "number", "min": -200, "max": 500, "step": 5, "unit": "cm", "default": "25", "label": "Marker Height", "description": "How high above the sentry the marker sits (cm).", "group": "Markers"},
+    "TeammateOpacity": {"type": "number", "min": 0.1, "max": 1, "step": 0.05, "default": "0.75", "label": "Teammate Opacity", "description": "How faded teammates' markers are.", "group": "Markers"},
+    "DebugKeys": {"hidden": true},
+    "PerfLog": {"hidden": true},
+    "EdgeWarning": {"default": "true", "label": "Off-Screen Warning", "description": "A red arrow at the screen edge when one of your off-screen sentries gets hot.", "group": "Heat"},
+    "HideInMenus": {"default": "true", "label": "Hide In Menus", "description": "Hides the markers while a menu is open.", "group": "Markers"},
+    "CappedColor": {"default": "59A6FF", "label": "Max Bonus Color", "description": "The damage bonus at its +50% cap.", "group": "Colors"},
+    "HeatColorLow": {"default": "59FF59", "label": "Heat Color: Low", "description": "The heat number below Yellow From.", "group": "Colors"},
+    "HeatColorMid": {"default": "FFD933", "label": "Heat Color: Mid", "description": "The heat number from Yellow From to Red From.", "group": "Colors"},
+    "HeatColorHigh": {"default": "FF4033", "label": "Heat Color: High", "description": "The heat number from Red From.", "group": "Colors"}
+  }
+}

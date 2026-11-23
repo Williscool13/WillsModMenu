@@ -1,0 +1,28 @@
+{
+  "schema": 0,
+  "title": "Meth Lab HUD",
+  "description": "Meth lab status: progress, next ingredient, ready.",
+  "applies": "live",
+  "preview": {"x": "PanelX", "y": "PanelY", "align": [1, 0.5], "size": [56, 56], "sizeKey": "IconSize", "label": "Meth HUD"},
+  "settings": {
+    "Style": {"type": "choice", "options": ["hud", "world", "both"], "labels": {"hud": "HUD", "world": "World", "both": "Both"}, "default": "hud", "label": "Style", "description": "HUD: a fixed spot on screen.\nWorld: over the lab.", "group": "Lab Status"},
+    "ToggleKey": {"type": "key", "group": "Keys", "default": "NONE", "label": "On/Off Key", "description": "Shows or hides the icon."},
+    "StyleKey": {"type": "key", "group": "Keys", "default": "NONE", "label": "Style Key", "description": "Switches HUD / world / both until the next restart."},
+    "PanelX": {"type": "number", "min": 0, "max": 1, "step": 0.005, "default": "0.985", "label": "Icon Position X", "description": "HUD style: the icon's right edge, as a fraction of the screen width.", "group": "Icon"},
+    "PanelY": {"type": "number", "min": 0, "max": 1, "step": 0.01, "default": "0.70", "label": "Icon Position Y", "description": "HUD style: the icon's vertical centre, as a fraction of the screen height.", "group": "Icon"},
+    "IconSize": {"type": "number", "min": 24, "max": 200, "step": 2, "unit": "px", "default": "56", "label": "Icon Size", "description": "Icon size in pixels.", "group": "Icon"},
+    "WorldHeight": {"type": "number", "min": -500, "max": 1000, "step": 10, "unit": "cm", "default": "150", "label": "World Height", "description": "World style: how high above the lab the icon sits (cm).", "group": "Icon"},
+    "GroupRadius": {"type": "number", "min": 1, "max": 50, "step": 1, "unit": "m", "default": "6", "label": "Group Radius", "description": "Pickups closer than this (metres) share one marker.", "group": "Ingredients"},
+    "DebugKeys": {"hidden": true},
+    "PerfLog": {"hidden": true},
+    "ReadySound": {"default": "true", "label": "Ready Sound", "description": "Also plays the \"meth ready\" sound so you hear it anywhere.", "group": "Lab Status"},
+    "ShowBatches": {"default": "true", "label": "Show Batches", "description": "A small number: how many more bags the lab can make.", "group": "Lab Status"},
+    "IngredientMarkers": {"default": "false", "label": "Ingredient Markers", "description": "Markers over ingredient pickups, seen through walls.", "group": "Ingredients"},
+    "HideInMenus": {"default": "true", "label": "Hide In Menus", "description": "Hides the icon while a menu is open.", "group": "Behavior"},
+    "IdleColor": {"default": "D9D9D9", "label": "Idle Color", "description": "The icon while idle.", "group": "Colors"},
+    "CookingColor": {"default": "26B3FF", "label": "Cooking Color", "description": "The icon while cooking.", "group": "Colors"},
+    "PerfectColor": {"default": "0D40FF", "label": "Perfect Color", "description": "The icon when the batch is perfect.", "group": "Colors"},
+    "BurntColor": {"default": "FF3326", "label": "Burnt Color", "description": "The icon when the batch is overcooked.", "group": "Colors"},
+    "BoomColor": {"default": "FF1F1F", "label": "Destroyed Color", "description": "The red X on a destroyed lab.", "group": "Colors"}
+  }
+}
