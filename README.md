@@ -50,6 +50,13 @@ python -I tests/jsontest.py                                # JSON library
 `tests/*.ps1` are small Windows helpers used for in-game checks (screenshots,
 clicks).
 
+## Mods made for it
+
+These ship a schema and apply changes live. Their repos show a complete setup.
+
+- [SentryHeat](https://github.com/Williscool13/SentryHeat) ([Nexus](https://www.nexusmods.com/payday3/mods/497))
+- [Meth Lab HUD](https://github.com/Williscool13/MethLabHUD) ([Nexus](https://www.nexusmods.com/payday3/mods/498))
+
 ## License
 
 [MIT](LICENSE).
