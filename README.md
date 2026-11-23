@@ -6,7 +6,7 @@ Settings, where players change any mod's `settings.ini` while the game runs.
 
 ![A mod's page in the menu](docs/screens/hero.png)
 
-- **Players:** download the zip from [Releases](https://github.com/Williscool13/WillsModMenu/releases). Nexus Mods page: link pending.
+- **Players:** download it from [Nexus Mods](https://www.nexusmods.com/payday3/mods/505) or from [Releases](https://github.com/Williscool13/WillsModMenu/releases).
 - **Mod authors:** read [docs/AUTHOR_GUIDE.md](docs/AUTHOR_GUIDE.md). A mod that
   reads a `settings.ini` already works. You can introduce a schema that adds
   labels, limits, instant apply and a draggable HUD preview. [examples/HelloHUD](examples/HelloHUD) is a
